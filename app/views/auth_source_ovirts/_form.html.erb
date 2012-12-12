@@ -6,12 +6,12 @@
   <%= text_f f, :name %>
   <%= text_f f, :host %>
   <%= text_f f, :port %>
-  <%= checkbox_f f, :tls, :label => "HTTPS" %>
+  <%= checkbox_f f, :tls, :label => "HTTPS", :checked => true %>
   <%#= text_f f, :account, :help_inline =>"Use this account to authenticate,<i>optional</i>".html_safe %>
   <%#= password_f f, :account_password, :onfocus => "this.value='';", :help_inline => "Use this account to authenticate, <i>optional</i>".html_safe %>
   <%#= text_f f, :base_dn, :label => "basedn", :class => "input-xxlarge" %>
   <%= checkbox_f f, :onthefly_register, :label => "On-the-fly user creation",
-    :help_inline => "oVirt user will have his Foreman account automatically created the first time he logs into Foreman" %>
+    :help_inline => "oVirt user will have his Foreman account automatically created the first time he logs into Foreman", :checked => true %>
 
   <%= submit_or_cancel f %>
 <% end %>
