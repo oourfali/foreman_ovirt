@@ -2,7 +2,7 @@
 <% title @host.to_label, icon(@host.os) + @host.to_label %>
 
 <% @vm = @host.compute_resource.find_vm_by_uuid(@host.uuid) rescue nil %>
-<%= host_title_actions(@host, @vm) %>
+<%#= host_title_actions(@host, @vm) %>
 <% content_for(:search_bar) {reports_show} %>
 
 <div class="row-fluid">

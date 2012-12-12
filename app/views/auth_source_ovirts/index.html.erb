@@ -1,0 +1,22 @@
+<% title "ovirt Authentication" %>
+
+<% title_actions link_to("New oVirt Authentication Source", new_auth_source_ovirt_path) %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Host</th>
+    <th>On the fly Register</th>
+    <th>HTTPS</th>
+    <th></th>
+  </tr>
+  <% for auth_source_ovirt in @auth_source_ovirts %>
+    <tr>
+      <td><%=link_to h(auth_source_ovirt.name), edit_auth_source_ovirt_path(:id => auth_source_ovirt.id) %></td>
+      <td><%=h auth_source_ovirt.host %></td>
+      <td><%=checked_icon auth_source_ovirt.onthefly_register %></td>
+      <td><%=checked_icon auth_source_ovirt.tls %></td>
+      <td><%=link_to ("Delete", auth_source_ovirt_path(auth_source_ovirt.id), :method => :delete, :confirm => "Delete #{auth_source_ovirt.name}?") %></td>
+    </tr>
+  <% end %>
+</table>

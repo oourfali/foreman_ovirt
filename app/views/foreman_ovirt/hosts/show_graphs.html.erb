@@ -1,0 +1,13 @@
+<% javascript 'charts' %>
+<% title @host.to_label, icon(@host.os) + @host.to_label %>
+
+<% @vm = @host.compute_resource.find_vm_by_uuid(@host.uuid) rescue nil %>
+<%#= host_title_actions(@host, @vm) %>
+<% content_for(:search_bar) {reports_show} %>
+
+<div class="row-fluid">
+  <div class="span8">
+    <%= runtime_chart 'runtime_graph', 'Runtime', "last #{@range} days", @host.runtime_chart(@range.days.ago) %>
+    <%= report_status_chart 'resource_graph', 'Resources', "last #{@range} days", @host.resources_chart(@range.days.ago) %>
+  </div>
+</div>
