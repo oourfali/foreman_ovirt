@@ -17,10 +17,10 @@ class AuthSourceOvirt < AuthSource
     # In case a field is empty, we put the login as the value
     # The oVirt login must be in the form of user@domain, so it is also valid as
     # E-mail value
-    attrs = [:firstname => userDetails.has_key?('name') ? userDetails['name'] : login.split("@")[0],
+    attrs = {:firstname => userDetails.has_key?('name') ? userDetails['name'] : login.split("@")[0],
              :lastname => userDetails['surname'],
              :mail => userDetails.has_key?('email') ? userDetails['email'] : login,
-             :auth_source_id => self.id ]
+             :auth_source_id => self.id }
     attrs
   end
 

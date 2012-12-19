@@ -4,8 +4,7 @@ module ForemanOvirt
     layout 'layouts/application_ovirt'
 
     def index
-      super
+      render :action => 'dashboard/index'
     end
-
   end
 end
