@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   # auth_source_ovirt resource
-  resources :auth_source_ovirts
+  resources :auth_source_ovirts, :controller => "foreman_ovirt/auth_source_ovirts"
 
   # Special dashboard for oVirt
   get "dashboard/ovirt" => "foreman_ovirt/dashboard#index"

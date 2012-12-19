@@ -1,6 +1,6 @@
 <% title_actions link_to(icon_text("question-sign", "Documentation", :class => "icon-white"), "http://theforeman.org/projects/foreman/wiki/LDAP_Authentication", :rel => "external", :class => "btn-info") %>
 
-<%= form_for @auth_source_ovirt do |f| %>
+<%= form_for @auth_source_ovirt, :url => auth_source_ovirts_path do |f| %>
   <%= base_errors_for @auth_source_ovirt %>
 
   <%= text_f f, :name %>

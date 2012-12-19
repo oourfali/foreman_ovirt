@@ -12,7 +12,7 @@
   </tr>
   <% for auth_source_ovirt in @auth_source_ovirts %>
     <tr>
-      <td><%=link_to h(auth_source_ovirt.name), edit_auth_source_ovirt_path(:id => auth_source_ovirt.id) %></td>
+      <td><%=h auth_source_ovirt.name %></td>
       <td><%=h auth_source_ovirt.host %></td>
       <td><%=checked_icon auth_source_ovirt.onthefly_register %></td>
       <td><%=checked_icon auth_source_ovirt.tls %></td>
