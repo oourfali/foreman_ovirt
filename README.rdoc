@@ -11,6 +11,7 @@ gem 'foreman_ovirt'
 = Usage
 
 See the README-foreman-plugin in the oVirt plugin repository (http://gerrit.ovirt.org/p/samples-uiplugins.git) for guidelines on what to do in the oVirt engine server.
+Also see ovedou.blogspot.com for more information, as I have a blog post on that.
 
 == Copyright
 
