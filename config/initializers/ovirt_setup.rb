@@ -1,3 +1,6 @@
+# Requiring the foreman_ovirt bundler group
+Bundler.require(:foreman_ovirt)
+
 # Add permissions
 Foreman::AccessControl.map do |map|
   map.security_block :ovirt do |map|

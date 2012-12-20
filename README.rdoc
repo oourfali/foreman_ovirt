@@ -4,17 +4,13 @@ Test engine for ovirt-foreman integration
 
 = Install
 
-Add to gemfile
-
-gem 'foreman_ovirt', :git => "https://github.com/isratrade/foreman_ovirt"
-
-Currently, you must use the branch "test_engine" under "https://github.com/isratrade/foreman" since this version removes the catchall in routes.rb and v1.rb and adds a forward slash to :controller => '/unattended' in hosts_helper.rb.
+1. gem install foreman_ovirt
+2. Add bundler.d folder in Foreman a file called foreman_ovirt, containing the line:
+gem 'foreman_ovirt'
 
 = Usage
 
-Go to view host and add /ovirt to the path
-
-Example:  localhost/hosts/foreman-test.sat.lab.tlv.redhat.com/ovirt
+See the README-foreman-plugin in the oVirt plugin repository (http://gerrit.ovirt.org/p/samples-uiplugins.git) for guidelines on what to do in the oVirt engine server.
 
 == Copyright
 
