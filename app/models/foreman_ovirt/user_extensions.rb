@@ -7,17 +7,18 @@ module ForemanOvirt
 
 	module InstanceMethods
     	def add_role_to_user
+        logger.debug "add_role_to_user started"
         user_auth_source = AuthSource.find(auth_source)
-    		if (user_auth_source && user_auth_source.type == "AuthSourceOvirt")
-          #if auth_source is ovirt
+        logger.debug "auth source is: " + user_auth_source.type
+	if (user_auth_source && user_auth_source.type == "ForemanOvirt::AuthSourceOvirt")
+          # Checking auth_source is oVirt
           ovirt_role_id = Role.find_by_name("Ovirt").id
           if (!user_roles.find_by_role_id(ovirt_role_id))
-            puts ovirt_role_id
+            logger.debug "adding oVirt role to user " + name
             user_roles.create(:role_id => ovirt_role_id)
-            puts "add_role_to_user"
           end
         end
-    	end
+      end
     end
   end
 end

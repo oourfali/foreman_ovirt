@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Joseph Mitchell Magen"]
-  s.date = "2012-12-06"
-  s.description = "view Foreman host inside Ovirt"
-  s.email = "jmagen@redhat.com"
+  s.authors = ["Oved Ourfali"]
+  s.date = "2012-12-20"
+  s.description = "Foreman oVirt plugin"
+  s.email = "ovedo@redhat.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -24,19 +24,30 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "app/controllers/foreman_ovirt/auth_source_ovirts_controller.rb",
+    "app/controllers/foreman_ovirt/dashboard_controller.rb",
     "app/controllers/foreman_ovirt/hosts_controller.rb",
+    "app/models/foreman_ovirt/auth_source_ovirt.rb",
+    "app/models/foreman_ovirt/user_extensions.rb",
+    "app/views/foreman_ovirt/auth_source_ovirts/_form.html.erb",
+    "app/views/foreman_ovirt/auth_source_ovirts/edit.html.erb",
+    "app/views/foreman_ovirt/auth_source_ovirts/index.html.erb",
+    "app/views/foreman_ovirt/auth_source_ovirts/new.html.erb",
+    "app/views/foreman_ovirt/auth_source_ovirts/welcome.html.erb",
     "app/views/foreman_ovirt/hosts/_overview.html.erb",
     "app/views/foreman_ovirt/hosts/show.html.erb",
-    "app/views/foreman_ovirt/layouts/application_ovirt.html.erb",
+    "app/views/foreman_ovirt/hosts/show_graphs.html.erb",
+    "app/views/layouts/application_ovirt.html.erb",
+    "config/initializers/ovirt_setup.rb",
     "config/routes.rb",
     "foreman_ovirt.gemspec",
     "lib/engine.rb",
     "lib/foreman_ovirt.rb"
   ]
-  s.homepage = "http://github.com/isratrade/foreman_ovirt"
+  s.homepage = "http://github.com/oourfali/foreman_ovirt"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.10"
   s.summary = "Plugin engine for Foreman-Ovirt integration"
 
   if s.respond_to? :specification_version then

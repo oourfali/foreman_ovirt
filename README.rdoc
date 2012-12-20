@@ -18,6 +18,6 @@ Example:  localhost/hosts/foreman-test.sat.lab.tlv.redhat.com/ovirt
 
 == Copyright
 
-Copyright (c) 2012 Joseph Mitchell Magen. See LICENSE.txt for
+Copyright (c) 2012 Oved Ourfali. See LICENSE.txt for
 further details.
 

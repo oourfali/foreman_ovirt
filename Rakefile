@@ -15,12 +15,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "foreman_ovirt"
-  gem.homepage = "http://github.com/isratrade/foreman_ovirt"
+  gem.homepage = "http://github.com/oourfali/foreman_ovirt"
   gem.license = "MIT"
   gem.summary = %Q{Plugin engine for Foreman-Ovirt integration}
-  gem.description = %Q{view Foreman host inside Ovirt}
-  gem.email = "jmagen@redhat.com"
-  gem.authors = ["Joseph Mitchell Magen"]
+  gem.description = %Q{Foreman oVirt plugin}
+  gem.email = "ovedo@redhat.com"
+  gem.authors = ["Oved Ourfali"]
   # dependencies defined in Gemfile
 end
 #Jeweler::RubygemsDotOrgTasks.new
