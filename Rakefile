@@ -16,7 +16,7 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "foreman_ovirt"
   gem.homepage = "http://github.com/oourfali/foreman_ovirt"
-  gem.license = "MIT"
+  gem.license = "GPL-3"
   gem.summary = %Q{Plugin engine for Foreman-Ovirt integration}
   gem.description = %Q{Foreman oVirt plugin}
   gem.email = "ovedo@redhat.com"

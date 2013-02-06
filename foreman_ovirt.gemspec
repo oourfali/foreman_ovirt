@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
     "lib/foreman_ovirt.rb"
   ]
   s.homepage = "http://github.com/oourfali/foreman_ovirt"
-  s.licenses = ["MIT"]
+  s.licenses = ["GPL-3"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
   s.summary = "Plugin engine for Foreman-Ovirt integration"
