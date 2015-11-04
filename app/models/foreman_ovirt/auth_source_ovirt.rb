@@ -4,6 +4,8 @@ module ForemanOvirt
     validates_length_of :host, :port, :maximum => 60, :allow_nil => false
     validates_numericality_of :port, :only_integer => true
 
+    attr_accessible :name, :host, :port, :tls, :onthefly_register
+
     def authenticate(login, password)
 
       # oVirt passes the username with "ovirt_" prefix. We remove it in this function.
